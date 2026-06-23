@@ -1,0 +1,143 @@
+#################### Create Github Account ###################
+1. Go to github.com
+2. click on signup button.
+3. provide email id, password, and unique username e.g. GitX05206
+4. click on check box.
+5. click on create button 
+6. Browser will verify the user 
+   -> if user verifies successful it will send verification code on mail, enter
+   verification code on UI.
+   -> If It will to solve a puzzle for further verification, please follow the instruction.
+
+7. Re-login with credentials.
+6. Account creation is successful.
+
+
+#################### Create Github Repository ###################
+
+1. fresh login to github account.
+2. click on create repository button.
+3. Provide repository name. e.g. AutomationPractice
+4. Provide Repository description. e.g. AutomationPractice
+5. Choose visiblity as Public.
+6. Select Readme file option.
+7. Click on create repository button.
+8. Repository created successfully.
+
+
+################### Install git client on local machine #################
+
+1. Download git client from given link 
+   https://github.com/git-for-windows/git/releases/download/v2.54.0.windows.1/Git-2.54.0-64-bit.exe
+
+
+2. Initiate installation and keep clicking on next button and complete the installation.
+3. Once installation is done.
+4. Search in windows for Git Bash -> if git bash is visible in search, then installation 
+   is successful.
+
+
+################### Clone Repository #################
+
+
+
+#################### Create common repository and provide access ######################
+
+-> Create a repository on server with Name : GTM_PlaywrightTS_BATCH16
+-> Provide access all the students in the batch.
+
+1. Open terminal in Gitcode Folder.
+   -> Create a folder with GitCode in C driver. (If already created don't repeat this step.)
+   -> Open gitCode folder -> right click -> click on show more option 
+   -> select "Open git Bash here".
+   -> It will open git terminal in GitCode Folder. 
+   -> path should be like : C:\GitCode
+
+
+2. Get repository URL from server.
+   -> go to GitHub server.
+   -> open GTM_PlaywrightTS_BATCH16 repo.
+   -> click on Code button.
+   -> Here we will get URL to copy.
+   -> Then copy URL. https://github.com/sqatools/GTM_PlaywrightTS_BATCH16.git
+
+
+
+3. Clone Repository.
+   -> Navigate to git terminal.
+   -> run below command
+   -> git clone https://github.com/sqatools/GTM_PlaywrightTS_BATCH16.git
+   -> It will clone repository on local system.
+   -> Make sure repository folder auto created locally once the clone operation is successful.
+   For Mac User : https://sqatools.in/install-git-on-mac-machine/
+
+4. Create a folder with your name inside repo.
+   -> Open Repository folder locally.
+   -> Create a folder with your name e.g. DeepeshY
+   -> Create a text file inside your folder and add some content to the file.
+   -> e.g. Demofile.txt
+
+5. Re-open git terminal inside the repository.
+   -> close existing terminal
+   -> manually go to repository folder GTM_PlaywrightTS_BATCH16
+   -> Open git terminal in repo folder.
+
+
+6. Perform steps to push code to repo.
+   -> git status : it will show your Folder name in red color.
+   -> git add <folder> : It will not show any output.
+   -> git status : It will show your folder in green color.
+   -> git commit -m "Added Message" : It will initiate commit operation with unique commit ID.
+   -> git push : Push will be rejected as we server data is not updated locally.
+
+   # Repeat below steps until push it.
+   -> git pull : It will pull data from server to local machine.
+   -> It will open git editor, that you have to close with :wq command on editor
+   -> Then it will show all files and folder updated locally from server.
+   -> try to push again
+   -> git push
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
