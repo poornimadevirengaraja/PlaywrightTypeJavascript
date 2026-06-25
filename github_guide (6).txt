@@ -1,0 +1,323 @@
+#################### Create Github Account ###################
+1. Go to github.com
+2. click on signup button.
+3. provide email id, password, and unique username e.g. GitX05206
+4. click on check box.
+5. click on create button 
+6. Browser will verify the user 
+   -> if user verifies successful it will send verification code on mail, enter
+   verification code on UI.
+   -> If It will to solve a puzzle for further verification, please follow the instruction.
+
+7. Re-login with credentials.
+6. Account creation is successful.
+
+
+#################### Create Github Repository ###################
+
+1. fresh login to github account.
+2. click on create repository button.
+3. Provide repository name. e.g. AutomationPractice
+4. Provide Repository description. e.g. AutomationPractice
+5. Choose visiblity as Public.
+6. Select Readme file option.
+7. Click on create repository button.
+8. Repository created successfully.
+
+
+################### Install git client on local machine #################
+
+1. Download git client from given link 
+   https://github.com/git-for-windows/git/releases/download/v2.54.0.windows.1/Git-2.54.0-64-bit.exe
+
+
+2. Initiate installation and keep clicking on next button and complete the installation.
+3. Once installation is done.
+4. Search in windows for Git Bash -> if git bash is visible in search, then installation 
+   is successful.
+
+
+################### Clone Repository #################
+
+
+
+#################### Create common repository and provide access ######################
+
+-> Create a repository on server with Name : GTM_PlaywrightTS_BATCH16
+-> Provide access all the students in the batch.
+
+1. Open terminal in Gitcode Folder.
+   -> Create a folder with GitCode in C driver. (If already created don't repeat this step.)
+   -> Open gitCode folder -> right click -> click on show more option 
+   -> select "Open git Bash here".
+   -> It will open git terminal in GitCode Folder. 
+   -> path should be like : C:\GitCode
+
+
+2. Get repository URL from server.
+   -> go to GitHub server.
+   -> open GTM_PlaywrightTS_BATCH16 repo.
+   -> click on Code button.
+   -> Here we will get URL to copy.
+   -> Then copy URL. https://github.com/sqatools/GTM_PlaywrightTS_BATCH16.git
+
+
+
+3. Clone Repository.
+   -> Navigate to git terminal.
+   -> run below command
+   -> git clone https://github.com/sqatools/GTM_PlaywrightTS_BATCH16.git
+   -> It will clone repository on local system.
+   -> Make sure repository folder auto created locally once the clone operation is successful.
+   For Mac User : https://sqatools.in/install-git-on-mac-machine/
+
+4. Create a folder with your name inside repo.
+   -> Open Repository folder locally.
+   -> Create a folder with your name e.g. DeepeshY
+   -> Create a text file inside your folder and add some content to the file.
+   -> e.g. Demofile.txt
+
+5. Re-open git terminal inside the repository.
+   -> close existing terminal
+   -> manually go to repository folder GTM_PlaywrightTS_BATCH16
+   -> Open git terminal in repo folder.
+
+
+6. Perform steps to push code to repo.
+   -> git status : it will show your Folder name in red color.
+   -> git add <folder> : It will not show any output.
+   -> git status : It will show your folder in green color.
+   -> git commit -m "Added Message" : It will initiate commit operation with unique commit ID.
+   -> git push : Push will be rejected as we server data is not updated locally.
+
+   # Repeat below steps until push it.
+   -> git pull : It will pull data from server to local machine.
+   -> It will open git editor, that you have to close with :wq command on editor
+   -> Then it will show all files and folder updated locally from server.
+   -> try to push again
+   -> git push
+   
+
+########### Create a Branch from Server and add code to Branch ##########
+1. Login to GitHub account with credentials.
+2. Open GitHub repository e.g. GTM_PlaywrightTS_BATCH16 
+3. Click on Branch dropdown : default branch is main.
+4. Click on view all branches : only main branch will be visible.
+5. Create a branch with your Unique Name : e.g DeepeshY_Branch
+   -> click on New Branch Button.
+   -> Provide your branch Name : DeepeshY_Branch
+   -> Select your source branch : default value is main.
+   -> Click on Create New Branch Button.
+   -> Branch will be created successfully
+   -> It will show in list of branches.
+
+6. Open git terminal in your repository folder.
+7. pull branches on local system 
+   -> git pull
+   -> It will pull all the data from server to local system.
+
+8. switch branch from main to new branch.
+   -> git branch : it will show current active branch in green color.
+   -> git checkout <branchName>
+   -> git checkout DeepeshY_Branch
+      branch 'DeepeshY_Branch' set up to track 'origin/DeepeshY_Branch'.
+     Switched to a new branch 'DeepeshY_Branch'
+   -> It will switch terminal to new branch.
+   -> git branch : It will show current branch as your branch.
+   
+9. Create a file in your dedicated folder with name feature_file.txt
+   and add some content to the file.
+
+10. Navigate back to git terminal.
+
+11.  Push feature file to server
+    -> git status : new file will show in red color.
+    -> git add <filename>
+    -> git status : new file will show in green color
+    -> git commit -m "Adding feature file to repo"
+    -> git push
+    -> file will be pushed to the server successfully.
+    -> Check on GitHub server file should be available in your 
+       branch only not in main branch
+
+
+######## Create pull request and merge code to main ################
+
+1. Go to GitHub server.
+2. User will see button with name "Compare & pull request"
+   -> It will only visible if your code is pushed successful on your feature branch.
+3. Click on "Compare & pull request" button. 
+ 
+4. Provide required values and create pull request
+   -> chose base branch or target branch : keep default as main.
+   -> Provide PR title, it should be related to what code changes you have done.
+   -> Attach evidences, image, logs, video.
+   -> Go to reviewer -> click on gear icon -> select reviewers from drop down.
+   -> Assignee -> gear icon -> select owner of work.
+   -> Click on Create pull request button.
+
+   -> reviewers will received invitation on mail.
+   
+
+5. Review code and provide review comments.
+   -> go to pull requests tab
+   -> Select any specific pull request or we can search by Author name
+   ->  Once we open the pull request there will four tabs
+       -> Conversations : This tab will show all comments and message in the pull request
+       -> Commit : It will show all code you have done and list of commits.
+       -> Checks: It will show all pipeline related check with GitHub Action.
+       -> File Changes: It will show list of all files that you have modified.
+
+   -> Add review comments
+      -> Go to File changed section -> select any specific file.
+      -> go through the code what person has written
+      -> add comments if any improvements required.
+      -> Once I will get approval from reviewer it will show checkmark in green color.
+      -> Now user can merger the changes from Conversion tab
+      -> User has to click Merge pull request button.  
+
+
+   -> Once change are merge to main
+   -> Feature file added in branch will be available in main branch as well.
+   -> Go repo folder and make sure feature file in available in main branch. 
+
+
+ 
+################# Resolve Merge Conflicts #################
+1. There is File1.txt in main branch.
+2. P1 create a branch from main branch and modify File1.txt from 1 to 5 line.
+3. P2 create a branch from main branch and modifies File1.txt from 1 to 5 line.
+4. P1 will raise PR against main and merge change to main.
+5. P2 will raise PR against main branch and try to merge
+   -> merge is going to fail, it will show merge conflict issue.
+
+   
+Pre-requisite:
+1. make sure your current active branch is main branch
+2. Update your main with server using 
+   -> git pull command
+   -> Already up to date.
+
+
+
+#### steps to create conflict scenarios ###
+1. Create a ConflictFile.txt in main branch in your dedicated folder and add some content.
+   file Content : Learning GitHub Fundamentals
+   
+2. Navigate to git terminal and check status:
+   -> git status : new file will show in red color.
+
+3. Push file to the server.
+   -> git add <filename>
+   -> git status : green color
+   -> git commit -m "added new file"
+   -> git push
+   
+   -> If your push is rejected, repeat below steps until successfully push the file
+   -> git pull : it will open edit that you have close with :wq
+   -> git push : try to push again.
+
+
+4. Create 2 branches with name Dy_P1_Branch, Dy_P2_Branch, on local system.
+
+   -> git checkout -b Dy_P1_Branch : It will create branch and switch on new branch1.
+   -> git checkout main : it will switch back to main.
+   -> git checkout -b Dy_P2_Branch : It will create branch2 and switch to branch2
+   -> check your current active branch
+   -> git branch : Dy_P2_Branch
+
+
+5. In Dy_P2_Branch, modify the ConflictFile.txt and add new content.
+    new content : Person2 :Changes: Learning GitHub Fundamentals
+
+6. push file to Dy_P2_Branch
+   -> git status:  it will show in red color
+   -> git add <filename>
+   -> git status: it will show file in green color.
+   -> git commit -m "Added file to Dy_P2_Branch
+   -> git push --set-upstream origin Dy_P2_Branch
+  
+
+7.  Switch to Dy_P1_Branch and follow all above steps
+    -> git checkout Dy_P1_Branch
+    -> modify the file with content.
+       New Content : Person1 :Changes: Learning GitHub Fundamentals
+   -> git status
+   -> git add <filename>
+   -> git commit -m "added new file"
+   -> git push
+   -> git push --set-upstream origin Dy_P1_Branch
+   -> Content is pushed to the server successfully.
+
+
+8. Go to GitHub server and create pull request from Dy_P1_Branch and merge it.
+9. Create pull request from Dy_P2_Branch branch and try to merge it
+  -> It will create conflict issue with main branch
+  -> Not allowed to merge the changes.
+
+10. Resolve conflict scenarios.
+   -> go to local terminal switch to Dy_P2_Branch
+   -> git pull origin main :  it will conflict issue with branch
+   -> Auto-merging DeepeshY/ConflictFile.txt
+	CONFLICT (content): Merge conflict in DeepeshY/ConflictFile.txt
+	Automatic merge failed; fix conflicts and then commit the result.
+   -> Open file and fix the merge issue and update
+   -> Remove all extra value and update code with required values.
+   -> push code to the server
+      -> git status
+      -> git add <filename>
+      -> git commit -m "added file"
+      -> git push
+   -> conflict issue is resolve
+   -> Now we can merge pull request in main.
+
+-> Go to git server -> open pull request ->  merge into the main.
+  
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
