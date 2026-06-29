@@ -1,0 +1,73 @@
+Installations 
+==========
+Install node js from website 
+Install vs code from website
+cmd check if it is installed
+Open vs code > teddy bear icon > and authorize AI feature of Git with Git hub user id
+Open the folder by right click and open in terminal 
+check if node -v is installed
+check if npm -v is installed
+npm init -y to initiate the npm package 
+Package.json file is created in your working folder Javascriptpractice
+
+===============================================
+
+1) Install node js 
+
+https://nodejs.org/en/download
+windows installer ( .msi)
+
+2) Install Vs code
+https://code.visualstudio.com/download?_exp_download=fb315fc982
+
+3) After installation check the version in command prompt in run cmd
+C:\Users\shalu>node -v
+v24.18.0
+
+C:\Users\shalu>npm -v
+11.16.0
+
+4) Open VS code 
+5) Install Git AI feature 
+click on teddy bear icon at the bottom right corner 
+6) Click Use AI feature.
+continue with Git hub
+Authorize with Git hub> user id 
+
+7) Open folder in vs code - C:\Gitcode\GTM_PlaywrightTS_BATCH16
+
+8) added a new folder in my folder "C:\Gitcode\GTM_PlaywrightTS_BATCH16\poornimadeviR"
+Create a new folder > Javascriptpractice ( Right click and open in Integrated terminal)
+Type  node -v
+Is shows version
+Type npm -v
+It shows version
+Type npm init -y ( This is the package to be initiated ) 
+It shows the package installed 
+
+9) If this terminal is giving error in PowerShell. Then Open the folder in cmd and do it 
+node -v
+npm -v
+npm init -y
+
+10) Normal command prompt folder > Cmd do it 
+C:\Gitcode\GTM_PlaywrightTS_BATCH16\poornimadeviR>npm -v
+11.16.0
+
+11)
+C:\Gitcode\GTM_PlaywrightTS_BATCH16\poornimadeviR>npm init -y
+Wrote to C:\Gitcode\GTM_PlaywrightTS_BATCH16\poornimadeviR\package.json:
+
+{
+  "name": "poornimadevir",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

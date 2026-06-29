@@ -272,7 +272,42 @@ Pre-requisite:
    -> Now we can merge pull request in main.
 
 -> Go to git server -> open pull request ->  merge into the main.
+
+======================================================
   
+### To show the recent modified file name 
+git diff <file name> 
+
+### added file 
+git add filename1 filename2 filename3
+
+### To revert  back the added file 
+git restore --staged filename1 filename2 filename3
+
+### you committed a file 
+git add "file1.txt"
+git commit -m "file1"
+
+### you want  to restore the commit you have done
+git reset --hard
+HEAD is now at 2636ff0 File1
+
+### steps to show which of the files are committed ###
+git show --name-status HEAD
+
+### go to git hub your branch and go to your folder###
+History  
+Here, you can see all commit history
+
+### clean unwanted file created 
+git clean -df 
+
+### clean unwanted branch created 
+git branch -d <branchname >
+
+### clean unwanted branch created forcefully if any error occurs and not deleting
+git branch -D <branchname>
+
 
 
 
