@@ -1,0 +1,6 @@
+Operators 
+right click on the work folder and open in terminal 
+then type
+.\filename.js 
+
+This will run the code written inside the file
